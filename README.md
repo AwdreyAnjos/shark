@@ -1,7 +1,7 @@
 # Shark
 Welcome to my project with the theme Sharks
 
-![image](https://raw.githubusercontent.com/AwdreyAnjos/shark/main/ex02/assets/HomePage.png)
+![image](https://raw.githubusercontent.com/AwdreyAnjos/shark/main/Shark/assets/HomePage.png)
 
 ## Tools used:
 
