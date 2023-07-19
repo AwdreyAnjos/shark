@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans:wght@200&display=swap');
+
+:root{
+    /* --primary-color: #1C2B2D;
+    --secundary-color: #E6D5B8;
+    --terciary-color: #99A8B2;
+    --hover-color: #1F6F8B; */
+
+    --primary-color: #001C30;
+    --secundary-color: #DAFFFB;
+    --terciary-color: #64CCC5;
+    --hover-color: #176B87;
+
+    --primary-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Alata', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--secundary-color);
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
+}
+
+
+.cabecalho{
+    gap: 50px;
+    display: flex;
+    padding: 1% 0%;
+    font-size: 1.87rem;
+    align-items: center;
+    justify-content: center;
+}
+.cabecalho__link{
+    text-decoration: none;
+    color: var(--terciary-color);
+}
+.cabecalho__link:hover{
+    color: var(--hover-color);
+}
+
+
+.introducao{
+    gap: 25px;
+    display: flex;
+    padding: 12% 22%;
+    align-items: center;
+    justify-content: space-between;
+}
+.introducao__especies{
+    gap:55px;
+    display: flex;
+    padding: 5% 22%;
+    align-items: center;
+    justify-content: space-between;
+}
+.introducao__conteudo{
+    gap: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.introducao__conteudo__titulo{
+    font-size: 2.81rem;
+    text-align: center;
+}
+.texto__destaque{
+    color: var(--terciary-color);
+}
+.introducao__conteudo__texto{
+    font-size: 1.38rem;
+    text-align: justify;
+    font-family: var(--primary-font);
+}
+.introducao__links{
+    gap: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.introducao__links__titulo{
+    font-size: 1.44rem;
+}
+.introducao__links__link{
+    width: 65%;
+    gap: 10px;
+    display: flex;
+    font-size: 1.375rem;
+    padding: 12px 0px;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--terciary-color);
+    background-color: transparent;
+    border: 2px solid var(--terciary-color);
+    
+
+}
+.introducao__links__link:hover{
+    background-color: var(--hover-color);
+}
+.introducao__links__img{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 30px 30px var(--terciary-color);
+}
+
+
+
+.rodape{
+    padding: 15px;
+    font-size: 1.56rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    background-color: var(--terciary-color);
+}   
+
+
+@media (max-width:1300px){
+    .introducao{
+        flex-direction: column-reverse;
+        padding: 15% 5%;
+    }
+    .introducao__especies{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .introducao__conteudo{
+        width: auto;
+    }
+}
